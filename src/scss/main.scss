@@ -1,0 +1,41 @@
+.input {
+  font-size: 36px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rendered {
+  width: 526px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 24px;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  text-align: center;
+}
+p {
+  padding: 0;
+  margin: 6px 0 0 0;
+  font-size: 20px;
+}
+.info {
+  width: 45%;
+}
+
+.bold {
+}
+.languages {
+  margin: 6px 0 0 0;
+  font-size: 20px;
+}
+.image-container {
+  width: 45%;
+}
+.image {
+  width: 100%;
+}
