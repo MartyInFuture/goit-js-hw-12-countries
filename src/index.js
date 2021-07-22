@@ -4,8 +4,8 @@ import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
 import { error } from '@pnotify/core';
 const debounce = require('lodash.debounce');
-const URL = 'https://restcountries.eu/rest/v2/name/';
 
+const URL = 'https://restcountries.eu/rest/v2/name/';
 const input = document.querySelector('.input');
 const rendered = document.querySelector('.rendered');
 
@@ -18,10 +18,9 @@ function render(data) {
     rendered.innerHTML = html + '</ul>';
   } else if (data.length === 1) {
     rendered.innerHTML = country(data);
-    console.log(data);
   } else {
     rendered.innerHTML = '';
-    error({ text: 'Too many matches found. Please enter a more specific query' });
+    error({ text: 'Too many matches found. Please enter a more specific query', delay: 2000 });
   }
 }
 
